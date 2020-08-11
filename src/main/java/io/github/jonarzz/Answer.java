@@ -1,14 +1,14 @@
-# Question
-https://stackoverflow.com/questions/63364411/java-string-problem-replacing-specific-part-of-a-string
+package io.github.jonarzz;
 
-# Answer
-Handling of strings in a specified format is done best using [regular expressions][1]. You define a specified pattern and after you find a part matching your pattern, you can replace it or analyze further.
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.toMap;
 
-It's best to write your code to make it easily extensible. For example - if a new contact form is added (home address, fax, business phone number), it should be easy to handle it in the code. Your solution makes it harder to resolve such problems as a whole new `if` branch is required and it's easy to make a mistake, it also makes the code less readable.
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Optional;
+import java.util.regex.Pattern;
 
-When dealing with a kind of dictionary (like your input String array), it's worth using a `Map` as it makes the processing faster and the code more readable. When a constant values are present, it's worth to define them too - as constants or enum values. Also - Java allows for writing more functional and more readable, functional-style code instead of nested for-eaches - it's worth using those features (JDK8+).
-
-Please, find the code snippet below and [a whole project with tests comparing your solution to mine on GitHub][2] - you can view it there or clone the repository and verify the code yourself:
+public class Answer implements Replacer {
 
     // we can simply add new contact types and their matchers using the constant below
     private static final Map<Pattern, ContactType> CONTACT_PATTERNS = Map.of(
@@ -53,7 +53,4 @@ Please, find the code snippet below and [a whole project with tests comparing yo
         }
     }
 
-
-
-  [1]: https://en.wikipedia.org/wiki/Regular_expression
-  [2]: https://github.com/Jonarzz/stack-overflow/tree/63364411
+}
