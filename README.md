@@ -1,7 +1,7 @@
 # Question
 https://stackoverflow.com/questions/63363359/reading-and-writing-file-in-iso-8859-1-encoding
 
-#Answer
+# Answer
 
 There is nothing actually wrong with your code. Notepad++ sees the file encoded in UTF-8 because on a basic level there is no difference between UTF-8 and the encoding you're trying to use. Only specific characters differ and some (a lot) are missing from ISO compared to UTF. You can read more [here][1] or by simply searching `ISO-8859-1 vs UTF-8` in Google.
 
