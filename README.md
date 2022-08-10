@@ -15,6 +15,7 @@ A repository in which I keep the code used to answer questions on Stack Overflow
 | [Sequence java with Semaphores](https://stackoverflow.com/questions/72853368/sequence-java-with-semaphores)                                                               | [Branch](https://github.com/Jonarzz/stack-overflow/tree/72853368) |
 | [Propper way to describe request body as java class](https://stackoverflow.com/questions/73296988/propper-way-to-describe-request-body-as-java-class/73300995#73300995)   | [Branch](https://github.com/Jonarzz/stack-overflow/tree/73296988) |
 | [How to mock a ObjectProvider\<XXX> that is autowired?](https://stackoverflow.com/questions/73297910/how-to-mock-a-objectproviderxxx-that-is-autowired/73301298#73301298) | [Branch](https://github.com/Jonarzz/stack-overflow/tree/73297910) |
+| ["incompatible parameter types in method reference" when trying to method reference Class method](https://stackoverflow.com/a/73302831/3305737)                           | [Branch](https://github.com/Jonarzz/stack-overflow/tree/73302606) |
 
 [stack-overflow-licensing]: https://stackoverflow.com/help/licensing
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
