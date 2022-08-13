@@ -22,6 +22,8 @@ A repository in which I keep the code used to answer questions on Stack Overflow
 | ["incompatible parameter types in method reference" when trying to method reference Class method](https://stackoverflow.com/a/73302831/3305737)                           | [Branch](https://github.com/Jonarzz/stack-overflow/tree/73302606)                                          |
 | [take liquibase scripts not from resource folder during unit tests](https://stackoverflow.com/a/73302394/3305737)                                                         | [Branch in another repo](https://github.com/Jonarzz/refactoring-katas/tree/stack-overlow-answers/73301167) |
 | [How to execute the code of a used Component instead @Mock the results in JUnit Tests?](https://stackoverflow.com/a/73323172/3305737)                                     | [Branch](https://github.com/Jonarzz/stack-overflow/tree/73322701)                                          |
+| [Why can't lambda class load?](https://stackoverflow.com/questions/73314766/why-cant-lambda-class-load/73342128#73342128)                                                 | [Branch](https://github.com/Jonarzz/stack-overflow/tree/73332148)                                          |
+| [Group Anagrams - LeetCode](https://stackoverflow.com/questions/73286781/group-anagrams-leetcode/73342662#73342662)                                                       | [Branch](https://github.com/Jonarzz/stack-overflow/tree/73286781)                                          |
 
 [stack-overflow-licensing]: https://stackoverflow.com/help/licensing
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
