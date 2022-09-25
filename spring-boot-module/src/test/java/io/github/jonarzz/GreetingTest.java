@@ -4,18 +4,19 @@ import static org.awaitility.Awaitility.*;
 import static org.mockito.Mockito.*;
 
 import org.junit.jupiter.api.*;
-import org.springframework.boot.test.mock.mockito.*;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.context.annotation.*;
 import org.springframework.test.context.junit.jupiter.*;
 
 import java.time.*;
 
 @SpringJUnitConfig(value = {
         QuartzConfig.class,
-        Greeting.class
+        GreetingTest.Config.class
 })
 public class GreetingTest {
 
-    @SpyBean
+    @Autowired
     Greeting greeting;
 
     @Test
@@ -24,4 +25,13 @@ public class GreetingTest {
                 .atMost(Duration.ofSeconds(10))
                 .untilAsserted(() -> verify(greeting, atLeast(1)).sayHello());
     }
+
+static class Config {
+
+    @Bean
+    @Primary
+    Greeting greeting() {
+        return spy(new Greeting());
+    }
+}
 }
